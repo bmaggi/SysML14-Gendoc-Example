@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.gendoc.script.acceleo.services">
+      <service
+            emtl="target/classes/com/github/bmaggi/sysml14/gendoc/queries/SysML14Queries.emtl"
+            importedByDefault="true"
+            name="SysML14Queries">
+      </service>
+   </extension>
+
+</plugin>

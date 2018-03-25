@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.github.bmaggi.sysml14.gendoc</groupId>
+		<artifactId>com.github.bmaggi.sysml14.gendoc</artifactId>
+		<version>1.1.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>com.github.bmaggi.sysml14.gendoc.repository</artifactId>
+	<packaging>eclipse-repository</packaging>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<includePackedArtifacts>true</includePackedArtifacts>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

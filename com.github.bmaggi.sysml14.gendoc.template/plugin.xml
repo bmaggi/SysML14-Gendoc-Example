@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension point="org.eclipse.gendoc.wizard.runner">
+      <GendocElement
+            Instance="com.github.bmaggi.sysml14.gendoc.template.SysML14GendocSelectionConverterRunner">
+      </GendocElement>
+   </extension>
+   
+<!-- extensions that show a way to provide an example model (using EMF Tooling) -->
+   <extension
+         point="org.eclipse.emf.common.ui.examples">
+      <example
+            id="com.github.bmaggi.gendoc.example"
+            pageImage="resource/icons/eclipse.png"
+            wizardID="com.github.bmaggi.example">
+         <projectDescriptor
+               contentURI="resource/GendocSysML14Example/"
+               description="Project containing a SysML 1.4 model for gendoc generation"
+               name="GendocSysML14Example">
+         </projectDescriptor>
+         <fileToOpen
+               location="GendocSysML14Example/GendocSysML14Example.di">
+         </fileToOpen>
+      </example>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <wizard
+            category="org.eclipse.ui.Examples/org.eclipse.papyrus.examples"
+            class="org.eclipse.emf.common.ui.wizard.ExampleInstallerWizard"
+            finalPerspective="org.eclipse.papyrus.infra.core.perspective"
+            icon="resource/icons/eclipse.png"
+            id="com.github.bmaggi.example"
+            name="Gendoc SysML14 Example Model"
+            preferredPerspectives="org.eclipse.papyrus.infra.core.perspective"
+            project="true">
+         <description>
+            Create a new Project that contains example for Gendoc generation
+         </description>
+      </wizard>
+   </extension>   
+   
+</plugin>

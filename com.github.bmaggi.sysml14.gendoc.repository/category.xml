@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.github.bmaggi.sysml14.gendoc.feature_1.1.0.qualifier.jar" id="com.github.bmaggi.sysml14.gendoc.feature" version="1.1.0.qualifier">
+      <category name="com.github.bmaggi.sysml14.gendoc.category"/>
+   </feature>
+   <category-def name="com.github.bmaggi.sysml14.gendoc.category" label="Gendoc-SysML14-Templates">
+      <description>
+         Gendoc-SysML14-Templates
+      </description>
+   </category-def>
+</site>

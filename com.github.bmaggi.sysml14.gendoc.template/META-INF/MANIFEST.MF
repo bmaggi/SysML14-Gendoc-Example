@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: com.github.bmaggi.sysml14.gendoc.template;singleton:=true
+Bundle-Version: 1.1.0.qualifier
+Bundle-Activator: com.github.bmaggi.sysml14.gendoc.template.Activator
+Bundle-Vendor: %Bundle-Vendor
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.gendoc.wizard;bundle-version="0.5.0",
+ org.eclipse.gendoc.bundle.acceleo.papyrus;bundle-version="0.5.0",
+ org.eclipse.gendoc.wizard.papyrus,
+ org.eclipse.emf.common.ui;bundle-version="2.12.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Localization: plugin

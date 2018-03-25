@@ -1,0 +1,21 @@
+[comment encoding = UTF-8 /]
+[module SysML14Queries('http://www.eclipse.org/uml2/4.0.0/UML', 'http://www.eclipse.org/papyrus/sysml/1.4/SysML')]
+
+[query public displayComment(elt : NamedElement) : String = 
+	invoke('com.github.bmaggi.sysml14.gendoc.queries.SysML14Queries', 'displayComment(org.eclipse.uml2.uml.NamedElement)', Sequence{elt})
+/]
+[query public displayPort(elt : NamedElement) : String = 
+	invoke('com.github.bmaggi.sysml14.gendoc.queries.SysML14Queries', 'displayPort(org.eclipse.uml2.uml.NamedElement)', Sequence{elt})
+/]
+
+[query public displayPart(elt : NamedElement) : String = 
+	invoke('com.github.bmaggi.sysml14.gendoc.queries.SysML14Queries', 'displayPart(org.eclipse.uml2.uml.NamedElement)', Sequence{elt})
+/]
+
+[query public displayAttribute(elt : NamedElement) : String = 
+	invoke('com.github.bmaggi.sysml14.gendoc.queries.SysML14Queries', 'displayAttribute(org.eclipse.uml2.uml.NamedElement)', Sequence{elt})
+/]
+
+[query public displayOperation(elt : NamedElement) : String = 
+	invoke('com.github.bmaggi.sysml14.gendoc.queries.SysML14Queries', 'displayOperation(org.eclipse.uml2.uml.NamedElement)', Sequence{elt})
+/]
