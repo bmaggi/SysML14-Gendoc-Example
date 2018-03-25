@@ -11,8 +11,11 @@ Example of [Gendoc][2] template for a [Papyrus][1] [SysML 1.4][3] model.
 
 This repository is organized around logical software components:
 
-* `repository`: The Eclipse update site specification for all the above components.
-
+* `com.github.bmaggi.sysml14.gendoc.queries`: plugin with acceleo querries
+* `com.github.bmaggi.sysml14.gendoc.queries.tests`: test for querries plugin
+* `com.github.bmaggi.sysml14.gendoc.template`: gendoc template and papyrus model
+* `com.github.bmaggi.sysml14.gendoc.feature`: feature for querries and template
+* `com.github.bmaggi.sysml14.gendoc.repository`: update site for querries and template
 
 ### How to build ###
 
