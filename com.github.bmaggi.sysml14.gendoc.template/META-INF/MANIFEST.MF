@@ -15,3 +15,4 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Bundle-Localization: plugin
 Eclipse-BundleShape: dir
+Automatic-Module-Name: com.github.bmaggi.sysml14.gendoc.template

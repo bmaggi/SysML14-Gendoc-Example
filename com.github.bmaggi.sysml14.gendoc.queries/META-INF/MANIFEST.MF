@@ -23,4 +23,5 @@ Bundle-ActivationPolicy: lazy
 Eclipse-LazyStart: true
 Bundle-Localization: plugin
 Export-Package: com.github.bmaggi.sysml14.gendoc.queries
+Automatic-Module-Name: com.github.bmaggi.sysml14.gendoc.queries
 
