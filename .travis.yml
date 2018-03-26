@@ -1,9 +1,11 @@
+sudo: required
 language: java
-sudo: false
 install: true
-
 jdk:
   - oraclejdk8
+env:
+  global:
+    - XDG_RUNTIME_DIR="/tmp"
 
 # GUI is required for eclipse testing
 before_script:
@@ -11,13 +13,15 @@ before_script:
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3 # give xvfb some time to start
 
-script:
-  - mvn install
+script: 
+ - mvn clean install
 
 cache:
   directories:
     - '$HOME/.m2/repository'
-    - '$HOME/.sonar/cache'
 
 notifications:
   email: false
+
+after_failure: 
+- cat /home/travis/build/bmaggi/SysML14-Gendoc-Example/com.github.bmaggi.sysml14.gendoc.queries.tests/target/work/configuration/1522095457650.log
