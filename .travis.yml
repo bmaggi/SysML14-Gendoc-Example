@@ -1,0 +1,23 @@
+language: java
+sudo: false
+install: true
+
+jdk:
+  - oraclejdk8
+
+# GUI is required for eclipse testing
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - sleep 3 # give xvfb some time to start
+
+script:
+  - mvn install
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
+
+notifications:
+  email: false
