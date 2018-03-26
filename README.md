@@ -4,6 +4,7 @@ Example of [Gendoc][2] template for a [Papyrus][1] [SysML 1.4][3] model.
 ### Status ###
 
 [![License](https://img.shields.io/badge/license-EPL2-blue.svg)](https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.html)
+[![Build Status](https://travis-ci.org/bmaggi/SysML14-Gendoc-Example.svg?branch=master)](https://travis-ci.org/bmaggi/SysML14-Gendoc-Example)
 
 :warning: Built/Hand tested against Eclipse Oxygen | Papyrus 3.0.0 | SysML 1.4 1.1.0 | Gendoc 0.7.0
 
