@@ -13,7 +13,7 @@
          point="org.eclipse.emf.common.ui.examples">
       <example
             id="com.github.bmaggi.gendoc.example"
-            pageImage="resource/icons/eclipse.png"
+            pageImage="resource/logo-gendoc.png"
             wizardID="com.github.bmaggi.example">
          <projectDescriptor
                contentURI="resource/GendocSysML14Example/"
@@ -32,7 +32,7 @@
             category="org.eclipse.ui.Examples/org.eclipse.papyrus.examples"
             class="org.eclipse.emf.common.ui.wizard.ExampleInstallerWizard"
             finalPerspective="org.eclipse.papyrus.infra.core.perspective"
-            icon="resource/icons/eclipse.png"
+            icon="resource/logo-gendoc.png"
             id="com.github.bmaggi.example"
             name="Gendoc SysML14 Example Model"
             preferredPerspectives="org.eclipse.papyrus.infra.core.perspective"
