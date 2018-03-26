@@ -24,4 +24,4 @@ notifications:
   email: false
 
 after_failure: 
-- cat /home/travis/build/bmaggi/SysML14-Gendoc-Example/com.github.bmaggi.sysml14.gendoc.queries.tests/target/work/configuration/1522095457650.log
+- find /home/travis/build/bmaggi/SysML14-Gendoc-Example/com.github.bmaggi.sysml14.gendoc.queries.tests/target/work/configuration/ -name '*.log' -exec cat {} \;
