@@ -29,7 +29,7 @@ mvn clean install
 
 ### How to use ###
 
-Install the latest stable version from [TODO]
+Install the latest stable version from [Update Site](https://bmaggi.github.io/SysML14-Gendoc-Example/)
 
 Or once the projects are build you need:
  - add the update site in "Available Software Site"  (it has been created here repository\target\repository\plugins\content.jar)
