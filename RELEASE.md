@@ -1,5 +1,9 @@
 # How to make a release of X.Y.Z and setup X.Y.Z+1 working state
 
+:warning: Release process non working due to emlt file 
+(temporary solution build in eclipse then mvn install) 
+
+
 1. Check that the target platform is correctly configured
 1. Set the version for the release
 ```

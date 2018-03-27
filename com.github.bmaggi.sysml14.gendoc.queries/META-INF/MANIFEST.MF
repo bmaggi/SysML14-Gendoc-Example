@@ -22,6 +22,7 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Eclipse-LazyStart: true
 Bundle-Localization: plugin
+Eclipse-BundleShape: dir
 Export-Package: com.github.bmaggi.sysml14.gendoc.queries
 Automatic-Module-Name: com.github.bmaggi.sysml14.gendoc.queries
 
