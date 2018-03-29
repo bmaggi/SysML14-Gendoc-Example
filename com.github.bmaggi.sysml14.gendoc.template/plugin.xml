@@ -13,7 +13,7 @@
          point="org.eclipse.emf.common.ui.examples">
       <example
             id="com.github.bmaggi.gendoc.example"
-            pageImage="resource/logo-gendoc.png"
+            pageImage="resource/eclipse.png"
             wizardID="com.github.bmaggi.example">
          <projectDescriptor
                contentURI="resource/GendocSysML14Example/"
