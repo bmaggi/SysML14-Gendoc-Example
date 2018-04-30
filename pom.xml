@@ -30,7 +30,7 @@
 		<repository>
 			<id>gendoc</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/gendoc/updates/releases/0.6.0/</url>
+			<url>http://download.eclipse.org/gendoc/updates/releases/0.7.0/oxygen/</url>
 		</repository>
 	</repositories>
 	<build>
