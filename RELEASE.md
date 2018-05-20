@@ -45,5 +45,6 @@ git push
 git push origin vX.Y.Z
 ```
 
-Check that the version is available using these update sites
-https://bmaggi.github.io/SysML14-Gendoc-Example/vX.Y.Z/ and https://bmaggi.github.io/SysML14-Gendoc-Example
+Check that the version is available using these update sites:
+ - direct update site: https://bmaggi.github.io/SysML14-Gendoc-Example/vX.Y.Z/ 
+ - composite update site: https://bmaggi.github.io/SysML14-Gendoc-Example
