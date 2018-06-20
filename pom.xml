@@ -14,7 +14,7 @@
 		<module>com.github.bmaggi.sysml14.gendoc.repository</module>
 	</modules>
 	<properties>
-		<tycho-version>1.1.0</tycho-version>
+		<tycho-version>1.2.0</tycho-version>
 	</properties>
 	<repositories>
 		<repository>
