@@ -10,6 +10,7 @@ import org.eclipse.uml2.uml.Classifier;
 import org.eclipse.uml2.uml.Comment;
 import org.eclipse.uml2.uml.Element;
 import org.eclipse.uml2.uml.NamedElement;
+import org.eclipse.uml2.uml.Operation;
 import org.eclipse.uml2.uml.Port;
 import org.eclipse.uml2.uml.Property;
 import org.eclipse.uml2.uml.util.UMLUtil;
@@ -23,6 +24,22 @@ public class SysML14Queries {
 				.collect(Collectors.joining());
 	}
 
+	@Deprecated // display operation is meaningful only for Classifier
+	public static String displayOperation(NamedElement namedElement) {
+		if (namedElement instanceof Classifier) {
+			return displayOperation((Classifier) namedElement);
+		}
+		return "";
+	}	
+	
+	
+	public static String displayOperation(Classifier classifier) {
+		return classifier.getAllOperations().stream()
+				.map(Operation::getName)
+				.map(name -> name + "\n")
+				.collect(Collectors.joining());
+	}
+	
 	public static String displayPart(NamedElement e) {
 		StringBuilder stringBuilder = new StringBuilder();
 		LinkedList<NamedElement> parts = new LinkedList<>();
@@ -61,19 +78,9 @@ public class SysML14Queries {
 		return stringBuilder.toString();
 	}
 
-	public static String displayOperation(NamedElement namedElement) {
-		StringBuilder stringBuilder = new StringBuilder();
-		if (namedElement instanceof Classifier) {
-			for (NamedElement ne : ((Classifier) namedElement).getAllOperations()) {
-				stringBuilder.append(ne.getName());
-				stringBuilder.append("\n");
-			}
-
-		}
-		return stringBuilder.toString();
-	}	
 	
 	
+	// Keep ordering of port IN/ OUT / INTOUT / Other
 	public static String displayPort(NamedElement e) {
 		StringBuilder stringBuilder = new StringBuilder();
 		for (NamedElement ne : getPort(e)) {

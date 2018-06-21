@@ -34,10 +34,24 @@ public class SysML14QueriesTest {
 	}	
 	
 	@Test
-	public void testDisplayOperation() {
+	public void testDisplay0Operation() {
+		Class clazz = UMLFactory.eINSTANCE.createClass();
+		assertEquals("", SysML14Queries.displayOperation(clazz));
+	}	
+	
+	@Test
+	public void testDisplay1Operation() {
 		Class clazz = UMLFactory.eINSTANCE.createClass();
 		clazz.createOwnedOperation("operation", null, null);
 		assertEquals("operation\n", SysML14Queries.displayOperation(clazz));
 	}	
 	
+	@Test
+	public void testDisplay2Operation() {
+		Class clazz = UMLFactory.eINSTANCE.createClass();
+		clazz.createOwnedOperation("operation", null, null);
+		clazz.createOwnedAttribute("notOperation", null);
+		clazz.createOwnedOperation("operation2", null, null);
+		assertEquals("operation\noperation2\n", SysML14Queries.displayOperation(clazz));
+	}		
 }
